@@ -2836,12 +2836,20 @@ class PlayState extends MusicBeatState
 		if(!startingSong) {
 			notes.forEach(function(daNote:Note) {
 				if(daNote.strumTime < songLength - Conductor.safeZoneOffset) {
+					#if debug
+					health -= 0.0100;
+					#else
 					health -= 0.0475;
+					#end
 				}
 			});
 			for (daNote in unspawnNotes) {
 				if(daNote.strumTime < songLength - Conductor.safeZoneOffset) {
+					#if debug
+					health -= 0.0100;
+					#else
 					health -= 0.0475;
+					#end
 				}
 			}
 
@@ -3365,10 +3373,6 @@ class PlayState extends MusicBeatState
 			combo = 0;
 
 			if(!practiceMode) songScore -= 10;
-			if(!endingSong) {
-				if(ghostMiss) ghostMisses++;
-				songMisses++;
-			}
 			RecalculateRating();
 
 			FlxG.sound.play(Paths.soundRandom('missnote', 1, 3), FlxG.random.float(0.1, 0.2));
@@ -3931,8 +3935,14 @@ class PlayState extends MusicBeatState
 		for (i in 0...arrayIDs.length) {
 			if(!Achievements.achievementsUnlocked[arrayIDs[i]][1]) {
 				switch(arrayIDs[i]) {
-					case 1 | 2 | 3 | 4 | 5 | 6 | 7:
+					case 1 | 2 | 3 | 4 | 5 | 6:
 						if(isStoryMode && campaignMisses + songMisses < 1 && CoolUtil.difficultyString() == 'HARD' &&
+						storyPlaylist.length <= 1 && WeekData.getWeekFileName() == ('week' + arrayIDs[i]) && !changedDifficulty && !usedPractice) {
+							Achievements.unlockAchievement(arrayIDs[i]);
+							return arrayIDs[i];
+						}
+					case 7:
+						if(campaignMisses + songMisses < 100 && CoolUtil.difficultyString() == 'FATAL' &&
 						storyPlaylist.length <= 1 && WeekData.getWeekFileName() == ('week' + arrayIDs[i]) && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];

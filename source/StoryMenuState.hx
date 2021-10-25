@@ -258,6 +258,7 @@ class StoryMenuState extends MusicBeatState
 
 	var movedBack:Bool = false;
 	var selectedWeek:Bool = false;
+	// Trying to remove antispam
 	var stopspamming:Bool = false;
 
 	function selectWeek()
@@ -270,7 +271,11 @@ class StoryMenuState extends MusicBeatState
 
 				grpWeekText.members[curWeek].startFlashing();
 				if(grpWeekCharacters.members[1].character != '') grpWeekCharacters.members[1].animation.play('confirm');
+				#if debug
+				stopspamming = false;
+				#else
 				stopspamming = true;
+				#end
 			}
 
 			// We can't use Dynamic Array .copy() because that crashes HTML5, here's a workaround.

@@ -11,22 +11,22 @@ using StringTools;
 
 class Achievements {
 	public static var achievementsStuff:Array<Dynamic> = [ //Name, Description, Hidden achievement
-		["Freaky on a Friday Night",	"Play on a Friday... Night.",							 true],
-		["She Calls Me Daddy Too",		"Beat Week 1 on Hard with no Misses.",					false],
-		["No More Tricks",				"Beat Week 2 on Hard with no Misses.",					false],
-		["Call Me The Hitman",			"Beat Week 3 on Hard with no Misses.",					false],
-		["Lady Killer",					"Beat Week 4 on Hard with no Misses.",					false],
-		["Missless Christmas",			"Beat Week 5 on Hard with no Misses.",					false],
-		["Highscore!!",					"Beat Week 6 on Hard with no Misses.",					false],
-		["You'll Pay For That...",		"Beat Week 7 on Hard with no Misses.",					true],
+		["Freaky on a Friday Night",	"Play on a Friday... Night.",						    true],
+		["She Calls Me Daddy Too",		"Beat Week 1 on Hard with no Misses.",					true],
+		["No More Tricks",				"Beat Week 2 on Hard with no Misses.",					true],
+		["Call Me The Hitman",			"Beat Week 3 on Hard with no Misses.",					true],
+		["Lady Killer",					"Beat Week 4 on Hard with no Misses.",					true],
+		["Missless Christmas",			"Beat Week 5 on Hard with no Misses.",					true],
+		["Highscore!!",					"Beat Week 6 on Hard with no Misses.",					true],
+		[">:(",							"Beat Fatality on Fatal with no Misses.",				false],
 		["What a Funkin' Disaster!",	"Complete a Song with a rating lower than 20%.",		false],
 		["Perfectionist",				"Complete a Song with a rating of 100%.",				false],
-		["Roadkill Enthusiast",			"Watch the Henchmen die over 100 times.",				false],
+		["Roadkill Enthusiast",			"Watch the Henchmen die over 100 times.",				true],
 		["Oversinging Much...?",		"Hold down a note for 20 seconds.",						false],
 		["Hyperactive",					"Finish a Song without going Idle.",					false],
 		["Just the Two of Us",			"Finish a Song pressing only two keys.",				false],
 		["Toaster Gamer",				"Have you tried to run the game on a toaster?",			false],
-		["Debugger",					"Beat the \"Test\" Stage from the Chart Editor.",		 true]
+		["Debugger",					"Beat the \"Test\" Stage from the Chart Editor.",		true]
 	];
 
 	public static var achievementsUnlocked:Array<Dynamic> = [ //Save string and Achievement tag + is it unlocked?
@@ -73,17 +73,17 @@ class Achievements {
 			}
 		}
 
-		// You might be asking "Why didn't you just fucking load it directly dumbass??"
-		// Well, Mr. Smartass, consider that this class was made for Mind Games Mod's demo,
-		// i'm obviously going to change the "Psyche" achievement's objective so that you have to complete the entire week
-		// with no misses instead of just Psychic once the full release is out. So, for not having the rest of your achievements lost on
-		// the full release, we only save the achievements' tag names instead. This also makes me able to rename
-		// achievements later as long as the tag names aren't changed of course.
+		/* You might be asking "Why didn't you just fucking load it directly dumbass??"
+		 Well, Mr. Smartass, consider that this class was made for Mind Games Mod's demo,
+		 i'm obviously going to change the "Psyche" achievement's objective so that you have to complete the entire week
+		 with no misses instead of just Psychic once the full release is out. So, for not having the rest of your achievements lost on
+		 the full release, we only save the achievements' tag names instead. This also makes me able to rename
+		 achievements later as long as the tag names aren't changed of course.
 
-		// Edit: Oh yeah, just thought that this also makes me able to change the achievements orders easier later if i want to.
-		// So yeah, if you didn't thought about that i'm smarter than you, i think
+		 Edit: Oh yeah, just thought that this also makes me able to change the achievements orders easier later if i want to.
+		 So yeah, if you didn't thought about that i'm smarter than you, i think
 
-		// buffoon
+		// buffoon */
 	}
 }
 

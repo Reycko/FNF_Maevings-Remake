@@ -45,6 +45,8 @@ class StageData {
 					stage = 'school';
 				case 'thorns':
 					stage = 'schoolEvil';
+				case 'fatality':
+					stage = 'fatality';
 				default:
 					stage = 'stage';
 			}

@@ -18,4 +18,6 @@
 
 ![image](https://user-images.githubusercontent.com/78082869/138709072-9956a8d8-7d1f-4123-a03d-5efd51ded8d5.png)
 
-3. Extract it into
+3. Extract the .zip file into the folder you want to put the source code into
+
+#                       DONE!

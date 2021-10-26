@@ -3936,11 +3936,12 @@ class PlayState extends MusicBeatState
 			if(!Achievements.achievementsUnlocked[arrayIDs[i]][1]) {
 				switch(arrayIDs[i]) {
 					case 1 | 2 | 3 | 4 | 5 | 6:
-						if(isStoryMode && campaignMisses + songMisses < 1 && CoolUtil.difficultyString() == 'HARD' &&
+						if(isStoryMode && campaignMisses + songMisses < 1 && CoolUtil.difficultyString() == 'FATAL' &&
 						storyPlaylist.length <= 1 && WeekData.getWeekFileName() == ('week' + arrayIDs[i]) && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
+
 					case 7:
 						if(campaignMisses + songMisses < 100 && CoolUtil.difficultyString() == 'FATAL' &&
 						storyPlaylist.length <= 1 && WeekData.getWeekFileName() == ('week' + arrayIDs[i]) && !changedDifficulty && !usedPractice) {
@@ -3994,6 +3995,15 @@ class PlayState extends MusicBeatState
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
+				
+				// Can't get this shit to work
+					//case 16:
+						//if(campaignMisses + songMisses < 10000 && CoolUtil.difficultyString() == 'JOKE' &&
+						//storyPlaylist.length <= 1 && WeekData.getWeekFileName() == ('week' + arrayIDs[i]) && !changedDifficulty && !usedPractice) {
+							//Achievements.unlockAchievement(arrayIDs[i]);
+							//return arrayIDs[i];
+						//}
+				
 				}
 			}
 		}

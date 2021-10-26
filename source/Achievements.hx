@@ -18,7 +18,7 @@ class Achievements {
 		["Lady Killer",					"Beat Week 4 on Hard with no Misses.",					true],
 		["Missless Christmas",			"Beat Week 5 on Hard with no Misses.",					true],
 		["Highscore!!",					"Beat Week 6 on Hard with no Misses.",					true],
-		[">:(",							"Beat Fatality on Fatal with no Misses.",				false],
+		[">:(",							"Beat Fatality on Fatal with less than 100 Misses.",	false],
 		["What a Funkin' Disaster!",	"Complete a Song with a rating lower than 20%.",		false],
 		["Perfectionist",				"Complete a Song with a rating of 100%.",				false],
 		["Roadkill Enthusiast",			"Watch the Henchmen die over 100 times.",				true],
@@ -26,7 +26,8 @@ class Achievements {
 		["Hyperactive",					"Finish a Song without going Idle.",					false],
 		["Just the Two of Us",			"Finish a Song pressing only two keys.",				false],
 		["Toaster Gamer",				"Have you tried to run the game on a toaster?",			false],
-		["Debugger",					"Beat the \"Test\" Stage from the Chart Editor.",		true]
+		["Debugger",					"Beat the \"Test\" Stage from the Chart Editor.",		true],
+	//	["Wait what",					"Beat Fatality on Joke with less than 10000 Misses.",	false]
 	];
 
 	public static var achievementsUnlocked:Array<Dynamic> = [ //Save string and Achievement tag + is it unlocked?
@@ -46,6 +47,7 @@ class Achievements {
 		['two_keys', false],			//13
 		['toastie', false],				//14
 		['debugger', false], 			//15
+	//	['week7_joke_less_1k_miss', false],	//16
 	];
 
 	public static var henchmenDeath:Int = 0;

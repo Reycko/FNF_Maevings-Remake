@@ -16,6 +16,8 @@ CubeBoi7070 (why not): https://www.youtube.com/channel/UCkEDV3co4OJXpKltHao3-tA
 
 CrystalBlue2021 (Chapter ZR Owner): https://www.youtube.com/channel/UCSOYlOSRbPNe-Lb-AGMJniw
 
+Reycko (Source Code Stuff): https://www.youtube.com/channel/UCgTaySQy7e0acRdG4V3xrGg
+
 # How to download the source code ?
 ## Way 1
 1. Install haxe 4.1.5, haxelib and haxeflixel on your computer (https://haxe.org/download/version/4.1.5 , https://lib.haxe.org , https://haxeflixel.com)

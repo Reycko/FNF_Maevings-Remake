@@ -1,0 +1,20 @@
+{
+	"songs": [
+		["Warfare", "dad", [160, 209, 255]],
+	],
+
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"weekBackground": "stage",
+
+	"storyName": "Fatal",
+	"weekBefore": "week7",
+	"weekName": "Week :)",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

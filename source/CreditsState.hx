@@ -24,10 +24,14 @@ class CreditsState extends MusicBeatState
 	private var iconArray:Array<AttachedSprite> = [];
 
 	private static var creditsStuff:Array<Dynamic> = [ //Name - Icon name - Description - Link - BG Color
-		['Fatality Remake Team'],
+		['Big Thanks'],
 		['Reycko',				'reycko',			'Charting, Coding',			'https://www.youtube.com/channel/UCgTaySQy7e0acRdG4V3xrGg/',	0xFFFF0000],
-		['Fatality Original Team'],
+		['Vs Maevings/Chapter ZR Dev Team'],
 		['Maevings',			'maevings',			'Composer',									'https://www.youtube.com/watch?v=61i4HAenMsM',	0x000FF000],
+		['RoundCat',				'roundcat',			'Artist',			'https://www.youtube.com/channel/UCYGckDXCCBRIcyspEeJdg-g',	0x000FF000],
+		['SuperFreddyCool',			'fred',			'Contributor to Pre Release',			'https://www.youtube.com/channel/UClIg8HmRfLMN91w0PuYc9GA', 0x000FF000],
+		['Cube',				'cube',				'why not',				'https://www.youtube.com/channel/UCkEDV3co4OJXpKltHao3-tA', 0x000FF000],
+		['CrystalBlue2021',			'crysta',			'Chapter ZR Dev',			'https://www.youtube.com/channel/UCSOYlOSRbPNe-Lb-AGMJniw', 0x000FF000],
 		['Psych Engine Team'],
 		['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',					'https://twitter.com/Shadow_Mario_',	0xFFFFDD33],
 		['RiverOaken',			'riveroaken',		'Main Artist/Animator of Psych Engine',				'https://twitter.com/river_oaken',		0xFFC30085],
